@@ -741,33 +741,68 @@
 
     <script src="js/scripts.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-      window.addEventListener("scroll", function () {
-        var scroll = document.querySelector(".scrollTop");
-        scroll.classList.toggle("active", window.scrollY > 500);
-      });
-
-      function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }
-    </script>
+    <script src="js/jquery-latest.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.12/swiper-bundle.min.js"
+      integrity="sha512-gWQp2DWTv4apOjx7Kgk+wl7Vb6/ND2oJCdce8xSbQ4AhgaVGYu6nRNOxBqKm02ImIb7bIM0LN5EQCtTc+ShmYw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        window.addEventListener("scroll", function () {
-          if (window.scrollY > 50) {
-            document.getElementById("navbar_top").classList.add("fixed-top");
-            // add padding top to show content behind navbar
-            navbar_height = document.querySelector(".navbar").offsetHeight;
-            document.body.style.paddingTop = navbar_height + "px";
-          } else {
-            document.getElementById("navbar_top").classList.remove("fixed-top");
-            // remove padding top from body
-            document.body.style.paddingTop = "0";
-          }
-        });
+      function initTestimon() {
+        "use strict";
+
+        if ($(".testimonials-carousel").length > 0) {
+          var j2 = new Swiper(".testimonials-carousel .swiper-container", {
+            preloadImages: false,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            grabCursor: true,
+            mousewheel: false,
+            centeredSlides: true,
+            pagination: {
+              el: ".tc-pagination",
+              clickable: true,
+              dynamicBullets: true,
+            },
+            navigation: {
+              nextEl: ".listing-carousel-button-next",
+              prevEl: ".listing-carousel-button-prev",
+            },
+            breakpoints: {
+              1024: {
+                slidesPerView: 3,
+              },
+            },
+          });
+        }
+
+        setInterval(function () {
+          var size = randomValue(sArray);
+          $(".bubbles").append(
+            '<div class="individual-bubble" style="left: ' +
+              randomValue(bArray) +
+              "px; width: " +
+              size +
+              "px; height:" +
+              size +
+              'px;"></div>'
+          );
+          $(".individual-bubble").animate(
+            {
+              bottom: "100%",
+              opacity: "-=0.7",
+            },
+            4000,
+            function () {
+              $(this).remove();
+            }
+          );
+        }, 350);
+      }
+      $(document).ready(function () {
+        initTestimon();
       });
     </script>
   </body>
