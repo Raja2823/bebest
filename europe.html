@@ -13,6 +13,13 @@
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
     <link rel="canonical" href="https://bebestconsultants.com/" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.12/swiper-bundle.min.css"
+      integrity="sha512-6lUGhvmSYCPtLcRAswhQgnb1ivx7qLFqQdCMG9kvZIWKDa8YDOiBp7hKRrtNBq7zcTn+9TsnWK8py2ROVXoc+Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta
@@ -932,6 +939,7 @@
 
     <script src="js/scripts.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-latest.min.js"></script>
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
         var scroll = document.querySelector(".scrollTop");
@@ -945,20 +953,17 @@
         });
       }
     </script>
+
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        window.addEventListener("scroll", function () {
-          if (window.scrollY > 50) {
-            document.getElementById("navbar_top").classList.add("fixed-top");
-            // add padding top to show content behind navbar
-            navbar_height = document.querySelector(".navbar").offsetHeight;
-            document.body.style.paddingTop = navbar_height + "px";
-          } else {
-            document.getElementById("navbar_top").classList.remove("fixed-top");
-            // remove padding top from body
-            document.body.style.paddingTop = "0";
-          }
-        });
+      $(".country").slice(0, 3).show(); //showing 3 div
+
+      $(".loadMore").on("click", function () {
+        $(".country:hidden").slice(0, 3).show(); //showing 3 hidden div on click
+
+        if ($(".country:hidden").length == 0) {
+          $(".loadMore").fadeOut(); //this will hide
+          //button when length is 0
+        }
       });
     </script>
   </body>
