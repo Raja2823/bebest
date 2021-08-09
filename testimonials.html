@@ -13,13 +13,6 @@
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
     <link rel="canonical" href="https://bebestconsultants.com/" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.12/swiper-bundle.min.css"
-      integrity="sha512-6lUGhvmSYCPtLcRAswhQgnb1ivx7qLFqQdCMG9kvZIWKDa8YDOiBp7hKRrtNBq7zcTn+9TsnWK8py2ROVXoc+Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta
@@ -243,13 +236,99 @@
                 <a href="contact.html" class="nav-link">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a href="" class="btn btn-danger">Apply Now</a>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Apply Now
+                </button>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Be Best Consultants
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  id="floatingName"
+                  placeholder="Your Name"
+                />
+                <label for="floatingName">Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingLocation"
+                  placeholder="Location"
+                />
+                <label for="floatingLocation">Specify Your Location</label>
+              </div>
+              <div class="mb-3">
+                <label for="country" class="form-label">Select Country</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Select Country</option>
+                  <option value="1">USA</option>
+                  <option value="2">UK</option>
+                  <option value="3">Australia</option>
+                  <option value="4">Others</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section>
       <div class="container">
@@ -606,13 +685,46 @@
         </div>
         <div class="sec quicklinks">
           <h2>Reviews</h2>
+          <ul>
+            <li>
+              <a href=""
+                >Google
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-half" style="color: yellow"></i>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Facebook
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Just Dial
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-half" style="color: yellow"></i>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="sec contact">
           <h2>Contact Us</h2>
           <ul class="info">
             <li>
-              <i class="bi bi-geo-alt"></i> 40-6/2-2, 4th Floor, <br />
-              Shriya Complex, Revenue Colony, Moghalrajpuram, Vijayawada – 10
+              <i class="bi bi-geo-alt"></i> 40-6/2-2, 4th Floor, Shriya Complex,
+              Revenue Colony, Moghalrajpuram, <br />
+              Vijayawada – 10
             </li>
             <li><i class="bi bi-telephone"></i> 089856 64888</li>
             <li>
@@ -629,68 +741,33 @@
 
     <script src="js/scripts.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-latest.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.12/swiper-bundle.min.js"
-      integrity="sha512-gWQp2DWTv4apOjx7Kgk+wl7Vb6/ND2oJCdce8xSbQ4AhgaVGYu6nRNOxBqKm02ImIb7bIM0LN5EQCtTc+ShmYw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      function initTestimon() {
-        "use strict";
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var scroll = document.querySelector(".scrollTop");
+        scroll.classList.toggle("active", window.scrollY > 500);
+      });
 
-        if ($(".testimonials-carousel").length > 0) {
-          var j2 = new Swiper(".testimonials-carousel .swiper-container", {
-            preloadImages: false,
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            grabCursor: true,
-            mousewheel: false,
-            centeredSlides: true,
-            pagination: {
-              el: ".tc-pagination",
-              clickable: true,
-              dynamicBullets: true,
-            },
-            navigation: {
-              nextEl: ".listing-carousel-button-next",
-              prevEl: ".listing-carousel-button-prev",
-            },
-            breakpoints: {
-              1024: {
-                slidesPerView: 3,
-              },
-            },
-          });
-        }
-
-        setInterval(function () {
-          var size = randomValue(sArray);
-          $(".bubbles").append(
-            '<div class="individual-bubble" style="left: ' +
-              randomValue(bArray) +
-              "px; width: " +
-              size +
-              "px; height:" +
-              size +
-              'px;"></div>'
-          );
-          $(".individual-bubble").animate(
-            {
-              bottom: "100%",
-              opacity: "-=0.7",
-            },
-            4000,
-            function () {
-              $(this).remove();
-            }
-          );
-        }, 350);
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       }
-      $(document).ready(function () {
-        initTestimon();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 50) {
+            document.getElementById("navbar_top").classList.add("fixed-top");
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector(".navbar").offsetHeight;
+            document.body.style.paddingTop = navbar_height + "px";
+          } else {
+            document.getElementById("navbar_top").classList.remove("fixed-top");
+            // remove padding top from body
+            document.body.style.paddingTop = "0";
+          }
+        });
       });
     </script>
   </body>

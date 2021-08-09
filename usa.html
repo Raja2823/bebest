@@ -97,7 +97,10 @@
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav
+        id="navbar_top"
+        class="navbar navbar-expand-lg navbar-light bg-light"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" class="logo" alt="" />
@@ -233,7 +236,15 @@
                 <a href="contact.html" class="nav-link">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a href="" class="btn btn-danger">Apply Now</a>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Apply Now
+                </button>
               </li>
             </ul>
           </div>
@@ -241,12 +252,384 @@
       </nav>
     </header>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Be Best Consultants
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  id="floatingName"
+                  placeholder="Your Name"
+                />
+                <label for="floatingName">Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingLocation"
+                  placeholder="Location"
+                />
+                <label for="floatingLocation">Specify Your Location</label>
+              </div>
+              <div class="mb-3">
+                <label for="country" class="form-label">Select Country</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Select Country</option>
+                  <option value="1">USA</option>
+                  <option value="2">UK</option>
+                  <option value="3">Australia</option>
+                  <option value="4">Others</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <h1 class="text-center mt-4">Study In USA</h1>
+      <p>
+        America is a Premier destination for international students owing to its
+        strong economy, vibrant campus life and the variety, flexibility and
+        quality academic options it offers. This is no surprise because American
+        institutions consistently feature in the top universities in the world.
+      </p>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              <strong> Why study in USA? </strong>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Ranked no 1 for overall quality of education</li>
+                <li>Numerous Study Choices</li>
+                <li>Internationally recognised</li>
+                <li>Flexible Education system</li>
+                <li>Merit based university assistance provided</li>
+                <li>Scholarships and fellowships awarded by departments</li>
+                <li>Tuition fee waivers</li>
+                <li>On campus jobs with minimal wages</li>
+                <li>Leader in latest technologies and advancement</li>
+                <li>Industry based training and research</li>
+                <li>
+                  Options to apply for graduate assistantship, Teaching
+                  assistantship and research assistantship
+                </li>
+                <li>Vibrant Campus life</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              <strong> Education system in USA </strong>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  <p>
+                    Universities – Normally, universities in the USA offer a
+                    range of graduate programmes, including doctoral programmes.
+                    Universities are usually larger than colleges in terms of
+                    sizes and opportunities. There are two types of universities
+                    in the USA – public and private.
+                  </p>
+                  <p>
+                    Public universities are funded by the US state government.
+                    On the other hand, private universities are run by student
+                    tuition fees, research outcome, donations and other funding
+                    sources and not owned by any government body.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Community colleges – Community colleges in the USA are small
+                    community-based two-year colleges that offer vocational and
+                    certificate programmes to students. These colleges work
+                    closely with some employers, and also offer different
+                    pathways programmes for students.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Liberal arts colleges – Liberal arts colleges in the USA
+                    emphasise on providing undergraduate degrees in liberal arts
+                    and sciences. These colleges could be either private or
+                    public institutions.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    American colleges and universities offer three basic
+                    programs:
+                  </p>
+                  University level first stage
+                  <ul>
+                    <li>Associate Degree (AA)</li>
+                    <li>Bachelor’s Degree (BS, BA)</li>
+                    <li>Post-bachelor’s Diploma/Certificate</li>
+                  </ul>
+                  University level second stage
+                  <ul>
+                    <li>Master’s Degree (without thesis) (MS, MA, Mengg)</li>
+                    <li>
+                      Master’s Degree research (with thesis)(MS, MA, Mengg)
+                    </li>
+                  </ul>
+                  University level third stage
+                  <ul>
+                    <li>Doctorate (Ph.D.)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              <strong> Cost of Studying in Australia </strong>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <p>
+                The total annual expenses, i.e. fees, books, boarding and
+                lodging will vary from $20,000 to $50,000 (Rs.13 to 35 lakhs)
+                depending upon the universities. Despite its high cost of
+                living, The USA always puts up her standard of living high. And
+                that is why you should have your budget planned well in advance.
+              </p>
+              <p>
+                The living expenses include food, rent, electricity, transport,
+                groceries, books/study materials, clothing can be $15,000 per
+                year approximately depending on the lifestyle you choose.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              <strong> Eligibility Test Requirements </strong>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  IELTS, TOEFL scores as proof of English language skills for
+                  admission to any course.
+                </li>
+                <li>
+                  Graduate Record Examination (GRE) – For entry in to Graduate
+                  Programs
+                </li>
+                <li>
+                  Graduate Management Admission Test (GMAT) is required for
+                  admission to MBA and other management programs.
+                </li>
+                <li>
+                  Scholastic Aptitude Test (SAT) is required for admission in to
+                  bachelor level courses
+                </li>
+                <li>
+                  Law and Medical schools usually require different exams like
+                  LSAT and MCAT
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <h1 class="text-center">Applying & Visa Procedure</h1>
+
+      <h2>How to Apply</h2>
+
+      <h4>Intakes</h4>
+
+      <p>
+        US universities have 3 intakes: Fall : August/September, Spring:
+        January/February and Summer : April/May. The major intake is the Fall
+        intake, but most of the universities are open for Spring and few of them
+        for Summer intake too.
+      </p>
+
+      <p>
+        The USA is known for its long and complex visa procedure. You may start
+        the procedure 3-5 months before the commencement of your course to avoid
+        any further delay.
+      </p>
+      <p>
+        Our experienced application team will advise you with all required
+        formalities such as Letter of Recommendations or Statement of purpose
+        etc. as per the university’s requirement to maximize the admission
+        possibilities.
+      </p>
+      <p>
+        Gather all required documents and start search for the Universities and
+        apply online. You need to pay Application fee also. Once you received
+        acceptance letter from your desired universities, your visa application
+        procedure begins.
+      </p>
+
+      <h2>Visa Procedure</h2>
+      <p>
+        Once you received acceptance letter from your desired universities, your
+        visa application procedure begins.
+      </p>
+
+      <ul>
+        <li>
+          Step 1 – Get your things placed:
+          <ul>
+            <li>An updated passport</li>
+            <li>Your non-immigrant visa application (Form DS-160)</li>
+            <li>Receipt of your application fee</li>
+            <li>Your latest photograph</li>
+            <li>
+              Form I-20 (certificates of your personal information like your
+              income certificate, academic and language test)
+            </li>
+            <li>SOP</li>
+          </ul>
+        </li>
+        <li>
+          Step 2- Make an appointment for the interview:
+          <p>
+            You may be asked to pay some fee and book an appointment to appear
+            for an interview.
+          </p>
+        </li>
+        <li>
+          Step 3 – Fill the DS-160 form:
+          <p>
+            Fill the DS-160 form online and you may be asked to link your social
+            media profile.
+          </p>
+        </li>
+        <li>
+          Step 4 – Appear the interview
+          <p>
+            Consider it a very crucial stage of your visa procedure. Stay
+            generous and confident while briefing your objectives for studying
+            in the US.
+          </p>
+        </li>
+        <li>
+          Step 5 – Plan your journey once you receive a confirmation letter.
+        </li>
+      </ul>
+    </div>
+
     <footer class="mt-4">
       <div class="container">
         <div class="sec aboutus">
           <h2>Be Best Consultants</h2>
           <p>
-            Established in 2010 Be Best! Consultants is one of the most
+            Established in 2010, Be Best! Consultants is one of the most
             successful international student recruitment companies in the
             Vijayawada city today. We represent over major leading education
             institutions around the world. We have been instrumental in helping
@@ -331,13 +714,46 @@
         </div>
         <div class="sec quicklinks">
           <h2>Reviews</h2>
+          <ul>
+            <li>
+              <a href=""
+                >Google
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-half" style="color: yellow"></i>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Facebook
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Just Dial
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-fill" style="color: yellow"></i>
+                <i class="bi bi-star-half" style="color: yellow"></i>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="sec contact">
           <h2>Contact Us</h2>
           <ul class="info">
             <li>
-              <i class="bi bi-geo-alt"></i> 40-6/2-2, 4th Floor, <br />
-              Shriya Complex, Revenue Colony, Moghalrajpuram, Vijayawada – 10
+              <i class="bi bi-geo-alt"></i> 40-6/2-2, 4th Floor, Shriya Complex,
+              Revenue Colony, Moghalrajpuram, <br />
+              Vijayawada – 10
             </li>
             <li><i class="bi bi-telephone"></i> 089856 64888</li>
             <li>
@@ -366,6 +782,22 @@
           behavior: "smooth",
         });
       }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 50) {
+            document.getElementById("navbar_top").classList.add("fixed-top");
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector(".navbar").offsetHeight;
+            document.body.style.paddingTop = navbar_height + "px";
+          } else {
+            document.getElementById("navbar_top").classList.remove("fixed-top");
+            // remove padding top from body
+            document.body.style.paddingTop = "0";
+          }
+        });
+      });
     </script>
   </body>
 </html>

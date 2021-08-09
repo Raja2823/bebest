@@ -4,7 +4,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   text-align: justify;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   justify-content: end;
@@ -476,7 +476,7 @@ footer {
 footer .container {
   width: 100%;
   display: grid;
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
   grid-gap: 20px;
 }
 footer .container .sec h2 {
@@ -498,6 +498,8 @@ footer .container .sec h2::before {
 
 footer .container .sec p {
   color: #fff;
+  text-align: justify;
+  word-spacing: normal;
 }
 
 .sci {
@@ -548,6 +550,8 @@ footer .container .sec p {
 }
 
 .info {
+  word-spacing: normal;
+  text-align: justify;
   position: relative;
   color: #fff;
 }
