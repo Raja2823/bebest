@@ -796,16 +796,10 @@ section {
   transition: all 300ms ease-in-out;
 }
 
-.whatsapp {
-  position: fixed;
-  right: 0px;
-  top: 52%;
-}
-.whatsapp h5 {
-  color: white;
-  background: #20b20f;
-  padding: 12px;
-  border-radius: 10px;
+
+.icon {
+  font-size: 45px;
+    color: #111;   
 }
 
 @media (max-width: 1024px) {
