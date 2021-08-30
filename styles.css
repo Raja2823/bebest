@@ -802,6 +802,10 @@ section {
     color: #111;   
 }
 
+.introV {
+  border : 3px solid black 
+}
+
 @media (max-width: 1024px) {
   .top {
     font-size: 14px;
