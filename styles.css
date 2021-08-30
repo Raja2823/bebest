@@ -338,6 +338,10 @@ h1::after {
   transform: translateX(-50%);
 }
 
+iframe {
+  
+  border: 1px linear-gradient(to right, #f44336, #9f4db5);
+}
 .review-box {
   width: 90%;
   max-width: 700px;
