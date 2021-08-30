@@ -338,9 +338,6 @@ h1::after {
   transform: translateX(-50%);
 }
 
-.mainvideo {  
-  border: 3px solid #E30016;
-}
 .review-box {
   width: 90%;
   max-width: 700px;
